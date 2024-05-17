@@ -1,5 +1,3 @@
-/* import './BriefDescr.css' */
-
 function BriefDescr(){
     return(
         <div id="summary">

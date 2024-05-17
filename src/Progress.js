@@ -16,9 +16,6 @@ function Progress(){
         initialFormValues[3]={ nome: "anonimo", amount: 100 };
         setFormValues(initialFormValues);
      }, []) 
-    /* const { barStyle, setBarStyle } = useContext(BarContext); */
-        /* const barStyle = useContext(BarContext); */
-        /* console.log(barStyle); */
         function toggleShowForm(){
         setShowForm(!showForm);
     }
@@ -28,15 +25,12 @@ function Progress(){
          dispAmount = amount;
         console.log(dispName + ":) +" +dispAmount);
         setFormValues((prevValues) =>[ ...prevValues, {name: dispName, amount: dispAmount}]);
-        /* faiCose(dispName, dispAmount); */
-       /*  console.log(formValues[formValues.length-1].name); */
         updateBar(dispAmount);
     }
     useEffect(() => {
         console.log(formValues);
-    }, [formValues]); // Esegui questa funzione ogni volta che formValues cambia
-    /* let barPercentage = 40 + "%"; */
-   
+    }, [formValues]); 
+  
     const [barStyle, setBarStyle] = useState("3%");
     function updateBar(dispAmount){
         console.log("quanto "+dispAmount)
@@ -49,7 +43,11 @@ function Progress(){
     return(
         <>
         <div className = "d-flex justify-content-center">
-
+        <div className=" margin-bottom-2 vw-60">
+                    <div className='border rounded progress'>
+                        <div  className="rounded progBar" style={{width: barStyle}}></div>
+                    </div>
+                </div>
           
         </div>
         <div id="fund-progr"  className='row justify-content-center align-items-center p-2 px-1 mb-5 px-xl-5'>
@@ -66,7 +64,7 @@ function Progress(){
               
                 </div>
                 <div className='card flex-col d-flex bg-orange rounded py-2 px-5  justify-content-center text-center' style={{maxHeight: "10rem"}}>
-                    <div className="comment-title">TIER 1</div>
+                    <div className="comment-title">TIER 4</div>
                     <div >by pledging</div>
                     <div className='my-3'>
                         <span className="bg-white mb-5 p-2 rounded">
@@ -76,7 +74,7 @@ function Progress(){
               
                 </div>
                 <div className='card flex-col d-flex bg-orange rounded py-2 px-5  justify-content-center text-center' style={{maxHeight: "10rem"}}>
-                    <div className="comment-title ">TIER 1</div>
+                    <div className="comment-title ">TIER 6</div>
                     <div >by pledging</div>
                     <div className='my-3'>
                         <span className="bg-white mb-5 p-2 rounded">
@@ -86,7 +84,7 @@ function Progress(){
               
                 </div>
                 <div className='card flex-col d-flex bg-orange rounded py-2 px-5  justify-content-center text-center' style={{maxHeight: "10rem"}}>
-                    <div className="comment-title d-flex justify-content-center">TIER 1</div>
+                    <div className="comment-title d-flex justify-content-center">TIER SUPER</div>
                     <div className="d-flex justify-content-center">by pledging</div>
                     <div className='my-3'>
                         <span className="bg-white mb-5 p-2 rounded">

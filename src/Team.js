@@ -24,7 +24,7 @@ function Team(){
                 <div className="col-8 d-flex align-items-center">
                 <div>
                 <h5 > Il nostro team di scienziati </h5>
-                <p >Determianti gran lavoratori, è solo grazie a loro che possiamo avere la nostra amatissima Cola. Con gran spirito d'iniziativa sono sempre alla ricerca della formula perfetta</p>
+                <p >Determinati gran lavoratori, è solo grazie a loro che possiamo avere la nostra amatissima Cola. Con gran spirito d'iniziativa sono sempre alla ricerca della formula perfetta</p>
 
                 </div>
                 </div>

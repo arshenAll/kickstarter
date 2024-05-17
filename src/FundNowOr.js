@@ -1,5 +1,4 @@
 import { BrowserRouter, Link, Route, Routes } from "react-router-dom";
-import Fund from "./Fund";
 import FundingForm from "./FundingForm";
 import { useState } from "react";
 
@@ -7,7 +6,6 @@ import { useState } from "react";
 function FundNowOr(){
     const [isTrue, setTrue] = useState(false);
     function callForm(){
-        console.log("hey");
         if (isTrue) {
             setTrue(false)
         }

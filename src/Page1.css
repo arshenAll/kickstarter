@@ -1,20 +1,14 @@
-*{
-   /*  border:2px solid red; */
-}
 @font-face {
     font-family: 'NukaCola';
-    src: url('fonts/NukaFont.otf') format('opentype'), /* IE6-IE8 */
+    src: url('fonts/NukaFont.otf') format('opentype'),
   }
 @font-face {
     font-family: 'Futura';
-    src: url('fonts/Futura\ Bold.otf') format('opentype'), /* IE6-IE8 */
+    src: url('fonts/Futura\ Bold.otf') format('opentype'),
 }
 .futura-font{font-family: 'Futura', Fallback, sans-serif;}
 .nuka-font{font-family: 'NukaCola', Fallback, sans-serif;
     }
-.d-flex{
-    display: flex;
-}
 .wrap{
     flex-wrap: wrap;
 }
@@ -23,12 +17,7 @@ hr{
 }
 body{
     background-color: #ffd99f;
-    /* width: 80vw; */
 }
-.border-red{
-    border: 2px solid red;
-}
-
 .title-logo{
     color:#d51c22;
     text-shadow: 0 2px #e5a44d, 0 -2px #e5a44d, 2px 0 #e5a44d, -2px 0 #e5a44d,  1px 1px #e5a44d, -1px -1px #e5a44d, 1px -1px #e5a44d, -1px 1px #e5a44d;
@@ -95,10 +84,6 @@ h3{
 .flex-col{
     flex-direction: column;
 }
-.vertical-center{
-/*     display: flex; */
-   /*  margin-top: 2rem; */
-}
 .justify-content-around{
     justify-content: space-around;
 }
@@ -119,11 +104,8 @@ h3{
 }
 
 .container-fund{
-    /* background-color: lightblue; */
     height: 20vh;
     width: 20vw;
-    
-    /* border: 0.7rem solid green; */
 }
 .progress{
     width: 100%;
@@ -147,9 +129,6 @@ h3{
         height: 100vh;
         width: auto;
     }
-   /*  .intro-video{
-        height: 5rem;
-    } */
 }
 @media (max-width: 991px){
     .intro-video{
@@ -173,18 +152,14 @@ button{
     background-color: aliceblue;
     display: flex;
     flex-direction: column;
-    /* padding: 2rem; */
     border-radius: 1rem;
     
 }
 .comment-title{
     font-size: 1.2rem;
-   /*  margin-bottom: 1rem; */
 }
 .comment-body{
     font-size: 1rem;
-
-/*     margin-bottom: 1rem; */
 }
 .bg-sand{
     background-color: #e2d1b7;
@@ -320,10 +295,9 @@ button{
 }
 .scroll-bar-green{
     overflow-y: scroll;
-    scrollbar-color: rgb(1, 82, 1);
+    scrollbar-color: rgb(201, 112, 12);
     scrollbar-width: thin;
-    scrollbar-track-color: rgb(135, 201, 135);
-    /* scrollbar-gutter:; */
+    scrollbar-track-color: rgb(238, 170, 24);
 }
 .z-index-1{
     z-index: 1;

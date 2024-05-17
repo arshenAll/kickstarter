@@ -2,7 +2,7 @@ function FundedBy(){
     return(
         <div className='gx-0 row p-2 py-5 d-flex bg-green align-items-center justify-content-around mt-5 w-100'>
             <div className="col-md-5 col-8 text-center">
-                <img src="../images/mrHandyFunded.png" style={{width: "50%"}}/>
+                <img src="../images/mrHandyFunded.png" style={{width: "50%"}} alt="mr Handy - Funded by"/>
             </div>
             <div className="col-md-7 col-12">
                 <div className="margin-bottom-2">

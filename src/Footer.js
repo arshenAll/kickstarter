@@ -1,14 +1,6 @@
 function Footer(){
     return(
         <>
-        {/* <footer className="d-flex ">
-                <p className="row">contatti</p>
-            <div className="d-flex justify-content-around row">
-                <p className="">elemento 1</p>
-                <p className="">elemento 2</p>
-                <p className="">elemento 3</p>
-            </div>
-        </footer> */}
         <hr/>
         <div className="container">
 
@@ -17,13 +9,6 @@ function Footer(){
       <div className="col-2">
         
         <img src="../images/nuka_cola_vector_logo.png" alt="nuka cola vector" style={{width: "80%"}}></img>
-        {/* <ul className="nav flex-column">
-          <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-muted">Home</a></li>
-          <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-muted">Features</a></li>
-          <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-muted">Pricing</a></li>
-          <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-muted">FAQs</a></li>
-          <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-muted">About</a></li>
-        </ul> */}
       </div>
 
     
@@ -43,20 +28,9 @@ function Footer(){
 
     <div className="d-flex justify-content-between pt-4 mt-4 border-top">
       <p>© 2044 NukaCola, Inc. All rights reserved.</p>
-      <ul className="list-unstyled d-flex">
-        
-        <li className="ms-3"><a className="link-dark" href="#"><svg className="bi" width="24" height="24"></svg></a></li>
-        <li className="ms-3"><a className="link-dark" href="#"><svg className="bi" width="24" height="24"></svg></a></li>
-        <li className="ms-3"><a className="link-dark" href="#"><svg className="bi" width="24" height="24"></svg></a></li>
-      </ul>
     </div>
   </footer>
         </div>
-       
-       
-       
-       
-       
         </>
     )
 }

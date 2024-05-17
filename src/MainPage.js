@@ -7,14 +7,10 @@ import Team from './Team';
 import About from './About';
 import Faq from './Faq';
 import {BrowserRouter, Routes, Route, Link} from "react-router-dom";
-import Fund from './Fund';
-import Contacts from './Contacts';
 import Footer from './Footer';
 
 
 function MainPage(){
-    /* const [collapsed, setCollapsed] = useState(true); */
- /*  const toggleNavbar = () => setCollapsed(!collapsed); */
 
     return(
     <div className="">
@@ -22,7 +18,7 @@ function MainPage(){
             <header>
                 <div className="center mt-3">
                     <h1 className="title-logo nuka-font">Nuka-Cola</h1>
-                    <h3 className="futura-font">an explosive flavour in a fun nuke-like bottle</h3>
+                    <h3 className="futura-font">un gusto esplosivo in una bottiglia atomica</h3>
                 </div>
             </header>
             <div className="navbar  wrap mt-0 w-100">
@@ -47,9 +43,6 @@ function MainPage(){
                                     <div className='nav-link'>
                                         <Link to="/faq" className='row-element link'>Faq</Link>
                                     </div>
-                                    {/* <div className='nav-link'>
-                                        <Link to="/contacts" className='row-element link'>Contacts</Link>
-                                    </div> */}
                                 </div>
                             </div>
                         </div>
@@ -62,8 +55,6 @@ function MainPage(){
                             <Route path='/about' element={<About/>}/>
                             <Route path='/funding' element={<Funding/>}/>
                             <Route path='/team' element={<Team/>}/>
-                            <Route path='/funder' element={<Fund/>}/>
-                            {/* <Route path='/contacts' element={<Contacts/>}/> */}
                             <Route path='/faq' element={<Faq/>}/>
                         </Routes>
                     </main>

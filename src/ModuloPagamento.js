@@ -16,7 +16,6 @@ function ModuloPagamento(){
     const [open, setOpen] = React.useState(false);
     const handleOpen = () => setOpen(true);
     const handleClose = () => setOpen(false);
-    console.log("Ciao");
     return(
         <>
         <Button onClick={handleOpen} text="open Modal"/>

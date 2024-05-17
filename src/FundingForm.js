@@ -2,8 +2,6 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 
 function FundingForm({onSubmit}){
-   /*  let className; */
-    console.log("banana")
     const [dispName, setDispName] = useState('');
     const [amountFunded, setAmountFunded] = useState('');
     const takeData = event =>{
@@ -12,13 +10,10 @@ function FundingForm({onSubmit}){
         const formData = new FormData(event.target);
         const name = formData.get("checkAnon") ? ("Anonymous") : formData.get("displayName")
         const amount = formData.get("amount");
-        console.log(typeof(amount));
-        console.log(dispName + "+" + amountFunded);
-        //valori da passare al padre ^^^
         <Link to="/funding"></Link>
         onSubmit(name, amount);
-        setDispName("");
-        setAmountFunded("")
+        setDisplayNameValue("");
+        setAmountValue("")
     } 
     const [ nameValue, setNameValue ] = useState();
     const [ mailValue, setMailValue] = useState();
@@ -49,7 +44,6 @@ function FundingForm({onSubmit}){
         const sanitizedValue = value.replace(regex, "");
         setDisplayNameValue(sanitizedValue);
         setDispName(event.target.value);
-       /*  setDisplayNameValue(dispName); */
     }
     const handleCardNumber = (event) => {
         const value = event.target.value;
@@ -65,9 +59,6 @@ function FundingForm({onSubmit}){
     }
     const handleAnonymous = (event) => {
         const value = event.target.value;
-        /* const regex = ; */
-        /* const sanitizedValue = value.replace(regex, ""); */
-        /* setIsAnon(sanitizedValue); */
     }
     const handleCardCVV = (event) => {
         const value = event.target.value;
@@ -80,8 +71,7 @@ function FundingForm({onSubmit}){
         const regex = /[^0-9\/]/g;
         const sanitizedValue = value.replace(regex, "");
         setAmountValue(sanitizedValue);
-        setAmountFunded(event.target.value); /* ! controllare */
-       /*  setAmountValue(amountValue); */
+        setAmountFunded(event.target.value); 
     }
     return(
         <div className="">
@@ -158,7 +148,7 @@ function FundingForm({onSubmit}){
                                                         <input 
                                                         onChange={handleAmount}
                                                         value = {amountValue}
-                                                        /* value={amountFunded} */
+                                                        
                                                         type="text" name="amount" className="form-control" required="required"/> 
                                                     </div> 
                                                     <div class="px-5 d-flex py-3 justify-content-center">

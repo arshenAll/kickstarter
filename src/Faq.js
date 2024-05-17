@@ -1,5 +1,4 @@
 function Faq(){
-    console.log("ciao");
     return(
 
     
